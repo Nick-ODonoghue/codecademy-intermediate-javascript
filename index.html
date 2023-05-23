@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Intermediate JavaScript - Codecademy | NickDO.xyz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="wrapper">
+    <h1>Codecademy - Learn Intermediate JavaScript</h1>
+    <p>Notes taken while going through the <a
+        href="https://www.codecademy.com/learn/learn-intermediate-javascript">Codecademy Learn Intermediate JS
+        course</a>
+    </p>
+
+    <h2>Classes</h2>
+
+    <section>
+      <h3>Introduction to Classes</h3>
+      <ul>
+        <li>JavaScript is an object-oriented programming language that allows us to model real-world items using
+          classes.</li>
+        <li>Classes are a tool used by developers to create similar objects quickly.</li>
+        <li>Objects have properties (keys) and behaviors (values) that define their characteristics and actions.</li>
+        <li>Creating individual objects using object literals can be repetitive and time-consuming.</li>
+        <li>Classes serve as templates for creating objects with shared properties and behaviors.</li>
+        <li>Instead of manually creating objects with the same structure, we can define a class and use it to create new
+          instances of objects.</li>
+        <li>Classes help reduce duplicate code and simplify the process of creating and managing objects.</li>
+        <li>Classes consist of properties (variables) and methods (functions) that define the characteristics and
+          actions of objects created from the class.</li>
+        <li>Classes can also have getter and setter methods to control access to the properties.</li>
+        <li>By using classes, we can create objects with consistent structure and behavior, making our code more
+          organized and maintainable.</li>
+      </ul>
+      <img src="./assets/images/classes.jpg" alt="a class">
+    </section>
+
+    <section>
+      <h3>Constructor</h3>
+      <ul>
+        <li>The constructor method is a special method in a class that is called automatically when a new instance of
+          the class is created.</li>
+        <li>The constructor method is defined using the constructor() syntax inside the class.</li>
+        <li>The constructor method is responsible for initializing the properties of the class.</li>
+        <li>When a new instance of the class is created, the constructor method is invoked with the provided arguments.
+        </li>
+        <li>The this keyword refers to the instance of the class being created, allowing us to set the initial values of
+          its properties.</li>
+        <li>In the constructor method, we can assign values to the instance properties using the this keyword and the
+          provided arguments or default values.</li>
+        <li>The constructor method does not have a return statement, as it automatically returns the newly created
+          instance of the class.</li>
+        <li>The constructor method allows us to customize the initialization process for each instance of the class.
+        </li>
+        <img src="./assets/images/constructor.jpg" alt="constructor">
+      </ul>
+    </section>
+
+    <section>
+      <h3>Instance</h3>
+      <ul>
+        <li>An instance is an object that is created from a class and contains the properties and methods defined in the
+          class.</li>
+        <li>To create an instance of a class, we use the new keyword followed by the class name and any arguments
+          required by the constructor method.</li>
+        <li>The new keyword calls the constructor method of the class, initializes the instance with the provided
+          values, and returns the newly created instance.</li>
+        <li>The instance has access to the properties and methods defined in the class.</li>
+        <li>Each instance has its own unique set of property values, allowing us to create multiple instances with
+          different property values based on the same class.</li>
+        <li>We can access the properties of an instance using dot notation, such as instanceName.propertyName.</li>
+        <li>The values of the instance properties are specific to that particular instance.</li>
+        <img src="./assets/images/instance.jpg" alt="instance">
+      </ul>
+    </section>
+
+    <section>
+      <h3>Methods</h3>
+      <ul>
+        <li>In a class, methods can be defined using the same syntax as object methods.</li>
+        <li>We can define getter methods in a class using the get keyword followed by the method name, which allows us
+          to access the value of a property.</li>
+        <li>Getter methods are used to retrieve the value of a property and are accessed like a property rather than a
+          method, without using parentheses.</li>
+        <li>We can define regular methods in a class using the standard syntax without the get keyword.</li>
+        <li>Regular methods can perform actions or modify the state of an object.</li>
+        <img src="./assets/images/methods.jpg" alt="methods">
+      </ul>
+    </section>
+
+    <section>
+      <h3>Method Calls</h3>
+      <ul>
+        <li>To call methods and getters on an instance, use the instance name followed by a period and the method or
+          getter name.</li>
+        <li>When calling a method, include opening and closing parentheses after the method name.</li>
+        <img src="./assets/images/methodCalls.jpg" alt="method call">
+        <img src="./assets/images/methodCalls2.jpg" alt="method call 2">
+      </ul>
+    </section>
+
+    <section>
+      <h3>Inheritance I</h3>
+      <ul>
+        <li>The Cat class is created to represent cats in a kitty daycare, with properties like name, usesLitter, and
+          behavior.</li>
+        <img src="./assets/images/inheritance.jpg" alt="inheritance">
+        <li>The Cat class shares some properties and a method with the previously created Dog class.</li>
+        <li>Inheritance is a tool to reduce code duplication when multiple classes share properties or methods.</li>
+        <li>The Animal class is introduced as a parent class that contains shared properties and methods for both Cat
+          and Dog classes.</li>
+        <img src="./assets/images/inheritance2.jpg" alt="inheritance 2">
+        <li>The Animal class has properties like name and behavior, and a method called incrementBehavior().</li>
+        <li>The Cat and Dog classes inherit the properties and methods from the Animal class.</li>
+        <img src="./assets/images/inheritance3.jpg" alt="inheritance 3">
+      </ul>
+    </section>
+
+    <section>
+      <h3>Inheritance II</h3>
+      <ul>
+        <li>The parent class is created to share common properties and methods with child classes.</li>
+        <li>The parent class has a constructor that initializes shared properties.</li>
+        <li>Getter methods are used to access the values of shared properties.</li>
+        <li>Shared methods can be defined to perform common actions.</li>
+        <img src="./assets/images/inheritance4.jpg" alt="inheritance 4">
+        <li>The child class extends the parent class to inherit its properties and methods.</li>
+        <li>The child class has its own constructor that initializes its unique properties and the inherited properties
+          from the parent class.</li>
+        <li>Getter methods can be defined to access the values of both the inherited and unique properties.</li>
+        <li>The child class can override inherited methods with its own implementation if needed.</li>
+        <li>Additional methods can be defined in the child class to perform specific actions.</li>
+        <img src="./assets/images/inheritance5.jpg" alt="inheritance 5">
+        <li>Inheritance allows for code reuse by creating a parent class and child classes that inherit its properties
+          and methods.</li>
+        <li>Child classes can extend the functionality of the parent class by adding their own properties and methods.
+        </li>
+        <li>Inherited properties and methods can be accessed and modified by child classes.</li>
+        <li>Overriding methods in child classes allows for customized behavior while maintaining the shared structure.
+        </li>
+        <li>Inheritance promotes code organization, maintainability, and extensibility.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Inheritance III</h3>
+      <ul>
+        <li>The Child class extends the Parent class using the extends keyword.</li>
+        <li>The Child class has its own constructor that initializes its unique property and calls the parent class
+          constructor using the super keyword.</li>
+        <li>The Child class can introduce new properties.</li>
+        <li>The extends keyword makes the parent class's methods available in the child class.</li>
+        <li>The super keyword is used to call the constructor of the parent class.</li>
+        <li>Calling super() is necessary before using the this keyword in the child class's constructor.</li>
+        <img src="./assets/images/inheritance6.jpg" alt="inheritance 6">
+        <img src="./assets/images/inheritance7.jpg" alt="inheritance 7">
+      </ul>
+    </section>
+
+    <section>
+      <h3>Inheritance IV</h3>
+      <ul>
+        <li>When a class extends another class using the extends keyword, all of the parent class's methods become
+          available to the child class.</li>
+        <img src="./assets/images/inheritance8.jpg" alt="inheritance 8">
+        <li>In the given example, the Cat class extends the Animal class.</li>
+        <li>The Cat class inherits the name getter and behavior getter from the Animal class.</li>
+        <img src="./assets/images/inheritance9.jpg" alt="inheritance 9">
+        <li>The Cat class also inherits the incrementBehavior() method from the Animal class.</li>
+        <img src="./assets/images/inheritance10.jpg" alt="inheritance 10">
+        <li>The Cat class has access to the name property through the name getter.</li>
+        <li>When creating an instance of the Cat class, such as bryceCat, it has access to the inherited methods and
+          properties.</li>
+        <li>Calling bryceCat.incrementBehavior() increases the value of the behavior property from 0 to 1.</li>
+        <li>Accessing bryceCat.behavior logs the value 1 to the console, as it retrieves the value saved to the behavior
+          property.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Inheritance V</h3>
+      <ul>
+        <li>Child classes can have their own properties, getters, setters, and methods in addition to the inherited
+          ones.</li>
+        <li>In the example, the Cat class adds a usesLitter getter that returns the value of _usesLitter.</li>
+        <img src="./assets/images/inheritance11.jpg" alt="inheritance 11">
+        <li>By using inheritance, the Cat class is more concise and has reduced lines of code compared to the standalone
+          Cat class without inheritance.</li>
+        <li>Inheritance allows for easy modification of shared methods or properties by making changes in the parent
+          class, instead of modifying each subclass individually.</li>
+        <li>The benefits of inheritance, such as time saved, improved readability, and code efficiency, become more
+          significant as the number and size of subclasses increase.</li>
+        <li>Another example is shown with the Dog class, which extends the Animal class and has access to the same
+          properties, getters, setters, and methods as the standalone Dog class but with reduced code size.</li>
+        <img src="./assets/images/inheritance12.jpg" alt="inheritance 11">
+        <li>Inheritance can be extended further to support other classes, such as Rabbit, Bird, Snake, or any other
+          subclasses needed in the application.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Static Methods</h3>
+      <ul>
+        <li>Static methods are methods that are directly available on the class itself, rather than on individual
+          instances of the class.</li>
+        <li>They can be called directly from the class, but not from an instance of the class.</li>
+        <li>Static methods are defined using the static keyword before the method name.</li>
+        <li>They are useful for creating utility methods or performing operations that are not specific to individual
+          instances.</li>
+        <img src="./assets/images/staticMethods.jpg" alt="static methods">
+        <li>In the example, the Animal class has a static method called generateName() that returns a random name from a
+          predefined list.</li>
+        <li>To call a static method, you append the method name to the class itself, without creating an instance of the
+          class.</li>
+        <img src="./assets/images/staticMethods2.jpg" alt="static methods 2">
+        <li>Static methods cannot be accessed from instances of the class or its subclasses.</li>
+        <li>Attempting to call a static method on an instance will result in an error.</li>
+        <img src="./assets/images/staticMethods3.jpg" alt="static methods 3">
+        <li>Static methods are often used for helper functions, calculations, or generating values that are not tied to
+          specific instances.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3></h3>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+
+  </main>
+
+</body>
+
+</html>
